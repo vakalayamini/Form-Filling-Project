@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      text-align: center;
+      background-color: #5e3a69;
+      color: white;
+      padding: 20px;
+      border-radius: 8px 8px 0 0;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .header p {
+      margin: 5px 0 0;
+      font-size: 16px;
+    }
+    .form-group {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0;
+    }
+    .form-group label {
+      flex: 1;
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group select {
+      flex: 3;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .form-group textarea {
+      flex: 2;
+      padding: 5px;
+      border: 1px solid white;
+      border-radius: 4px;
+      resize: none;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      background-color: #5e3a69;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #5e3a69;
+    }
+
+    .mic-icon {
+      cursor: pointer;
+      font-size: 20px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Student Registration Form</h1>
+    </div>
+
+    <form method="POST">
+      <!-- Personal Details -->
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter full name" required />
+        <span class="mic-icon" onclick="startSpeechRecognition('firstName')">🎙</span>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required />
+        <span class="mic-icon" onclick="startSpeechRecognition('lastName')">🎙</span>
+      </div>
+      <div class="form-group">
+        <label for="fatherName">Father's Name:</label>
+        <input type="text" id="fatherName" name="fatherName" placeholder="Enter father's name" required />
+        <span class="mic-icon" onclick="startSpeechRecognition('fatherName')">🎙</span>
+      </div>
+      <div class="form-group">
+        <label for="motherName">Mother's Name:</label>
+        <input type="text" id="motherName" name="motherName" placeholder="Enter mother's name" required />
+        <span class="mic-icon" onclick="startSpeechRecognition('motherName')">🎙</span>
+      </div>
+      <div class="form-group">
+        <label for="dob">Birth Date:</label>
+        <input type="text" id="dob" name="dob"placeholder="Enter Date of Birth" required />
+        <span class="mic-icon" onclick="startSpeechRecognition('dob')">🎙</span>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" name="gender"placeholder="Enter gender" required />
+          <span class="mic-icon" onclick="startSpeechRecognition('gender')">🎙</span>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required />
+        <span class="mic-icon" onclick="startSpeechRecognition('phone')">🎙</span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email address" required />
+        <span class="mic-icon" onclick="startSpeechRecognition('email')">🎙</span>
+      </div>
+      <div class="form-group">
+        <label for="bloodGroup">Blood Group:</label>
+        <input type="text" id="bloodGroup" name="bloodGroup" placeholder="Enter blood group" />
+        <span class="mic-icon" onclick="startSpeechRecognition('bloodGroup')">🎙</span>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter full address" required />
+        <span class="mic-icon" onclick="startSpeechRecognition('address')">🎙</span>
+      </div>
+      <div class="form-group">
+        <label for="branch">Branch:</label>
+        <input type="text" id="branch" name="branch" placeholder="Enter branch" required />
+        <span class="mic-icon" onclick="startSpeechRecognition('branch')">🎙</span>
+      </div>
+      <div class="form-group">
+        <label for="section">Section:</label>
+        <input type="text" id="section" name="section" placeholder="Enter section" required />
+        <span class="mic-icon" onclick="startSpeechRecognition('section')">🎙</span>
+      </div>
+      <div class="form-group">
+        <label for="rollNumber">Roll Number:</label>
+        <input type="text" id="rollNumber" name="rollNumber" placeholder="Enter roll number" required />
+        <span class="mic-icon" onclick="startSpeechRecognition('rollNumber')">🎙</span>
+      </div>
+      <div class="form-group">
+        <label for="yearOfStudy">Year of Study:</label>
+        <input type="text" id="yearOfStudy" name="yearOfStudy" placeholder="Enter year of study" required />
+        <span class="mic-icon" onclick="startSpeechRecognition('yearOfStudy')">🎙</span>
+      </div>
+      <div class="form-group">
+        <label for="percentage">Percentage:</label>
+        <input type="text" id="percentage" name="percentage" placeholder="Enter percentage" required />
+        <span class="mic-icon" onclick="startSpeechRecognition('percentage')">🎙</span>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+    recognition.lang = 'en-US'; // You can set the language accordingly
+  
+    // Start voice recognition for specific input field
+    function startSpeechRecognition(inputId) {
+      recognition.start();
+  
+      recognition.onresult = function(event) {
+        let transcript = event.results[0][0].transcript.trim();
+        
+        // Remove trailing periods or other unwanted punctuation
+        transcript = transcript.replace(/\.$/, "");
+        document.getElementById(inputId).value = transcript;
+      };
+  
+      recognition.onerror = function(event) {
+        alert('Error occurred in recognition: ' + event.error);
+      };
+    }
+  </script>  
+
+</body>
+</html>
