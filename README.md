@@ -13,7 +13,7 @@ The application includes user authentication (signup and login pages), a home pa
 
 1. **Signup**: After the user submits their signup details, the system checks if the provided email is already present in the database.
 
-   - If the email already exists, the user is redirected to the login page.
+   - If the email already exists, the user is redirected to the signup page.
    - If it’s a new email, the user can proceed to the login page.
 
 3. **Login**: When the user tries to log in:
