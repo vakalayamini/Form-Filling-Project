@@ -12,14 +12,15 @@ The application includes user authentication (signup and login pages), a home pa
 ### Workflow
 
 1. **Signup**: After the user submits their signup details, the system checks if the provided email is already present in the database.
-   -If the email already exists, the user is redirected to the login page.
+
+   - If the email already exists, the user is redirected to the login page.
    - If it’s a new email, the user can proceed to the login page.
 
-2. **Login**: When the user tries to log in:
+3. **Login**: When the user tries to log in:
    - If the credentials are incorrect, the user is redirected back to the login page to try again.
    - If the credentials are correct, the student registration form opens for the user to fill out.
 
-3. **Student Registration Form**: 
+4. **Student Registration Form**: 
    - After filling out the student registration form, the system checks if all details are valid.
    - If the form is valid, the user is redirected to the home page.
    - If the form is invalid or incomplete, the user is redirected back to the form page to correct the errors.
